@@ -10,10 +10,10 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 import os
 from requests_oauthlib import OAuth1Session
 # ========== CONFIGURATION (Replace with your actual keys/secrets) ==========
-TWITTER_API_KEY="VNvaOVTaG4BVTDIOw3z6ZZYc5"
-TWITTER_API_SECRET="Jp7slfpk8xfNB8lgpdQVkKrplIRLT3sbtrr660eiJQGnZ2VJos" 
-TWITTER_ACCESS_TOKEN="1622583198499721217-IY6e30nIVSahU3rEwU3mArS6an7tjs"
-TWITTER_ACCESS_SECRET="FR5e3kH6OUgqsMR7SDIw4Y2YjOPhtmf9Rdy8t1vFYO0VX"
+TWITTER_API_KEY = os.getenv("TWITTER_API_KEY")
+TWITTER_API_SECRET = os.getenv("TWITTER_API_SECRET")
+TWITTER_ACCESS_TOKEN = os.getenv("TWITTER_ACCESS_TOKEN")
+TWITTER_ACCESS_SECRET = os.getenv("TWITTER_ACCESS_SECRET")
 LOG_FILE = 'log.csv'
 NEWS_URL = 'https://punchng.com/'
 
