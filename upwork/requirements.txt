@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+openai
+tweepy 
+transformers
+torch 
+tiktoken
+protobuf
+sentencepiece 
